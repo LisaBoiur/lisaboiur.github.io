@@ -1,6 +1,14 @@
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
 header {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 2px solid #6b9b5e;
+  padding: 10px 40px;
 }
 
 img {
@@ -9,5 +17,36 @@ img {
 
 .title-img {
   max-width: 300px;
-  width: 50%
+  width: 50%;
+}
+
+.social-links {
+  padding: 0 50px;
+}
+
+.social-links .fa {
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 30px;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: white;
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+}
+
+.social-links .fa-linkedin {
+  background: #0a66c2;
+}
+
+.social-links .fa-envelope {
+  background: #6b9b5e;
+}
+
+@media screen and (max-width: 480px) {
+  .social-links .fa {
+    padding: 5px;
+    width: 35px;
+    font-size: 25px
+  }
 }
