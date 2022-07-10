@@ -1,5 +1,4 @@
 * {
-  user-select: none;
   box-sizing: border-box;
   font-family: 'Signika', sans-serif;
 }
@@ -37,7 +36,6 @@ img {
   display: block;
   text-align: center;
   padding: 10px;
-  user-select: text;
 }
 
 .social-links .fa {
