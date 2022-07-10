@@ -3,39 +3,40 @@
   font-family: 'Signika', sans-serif;
 }
 
-body {
-  max-width: 1040px;
-  margin: auto;
-}
-
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   border-bottom: 2px solid #6b9b5e;
-  padding: 10px 40px;
+  padding: 10px 20px;
+}
+
+body {
+  margin: 0;
 }
 
 img {
   max-width: 100%;
+  margin: auto;
+  display: block;
 }
 
 .title-img {
   max-width: 300px;
   width: 50%;
+  margin: 0;
 }
 
 .social-links {
-  padding: 0 50px;
   text-align: center;
 }
 
 .link-inline {
-  font-family: arial;
-  color: #496a40;
+  color: #6b9b5e;
   display: block;
   text-align: center;
   padding: 10px;
+  padding-bottom: 0;
 }
 
 .social-links .fa {
@@ -69,12 +70,19 @@ h1 {
   color: #6b9b5e;
 }
 
+header {
+  max-width: 1060px;
+  margin: auto;
+}
+
 section {
   display: flex;
   gap: 10px;
   justify-content: space-around;
   border-bottom: 2px solid #6b9b5e;
   padding: 20px;
+  max-width: 1060px;
+  margin: auto;
 }
 
 .exp-pix {
@@ -140,6 +148,7 @@ section {
 
   header {
     padding: 10px;
+    padding-left: 20px;
     max-width: 500px;
     margin: auto;
   }
@@ -151,7 +160,7 @@ section {
   }
 
   .social-links {
-    padding: 10px 0 0;
+    margin-bottom: -2px;
   }
 
   .edu {
