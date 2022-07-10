@@ -1,6 +1,12 @@
 * {
-    user-select: none;
-    box-sizing: border-box;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Signika', sans-serif;
+}
+
+body {
+  max-width: 1040px;
+  margin: auto;
 }
 
 header {
@@ -58,5 +64,104 @@ img {
     padding: 5px;
     width: 35px;
     font-size: 25px
+  }
+}
+
+h1 {
+  color: #6b9b5e;
+}
+
+section {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  border-bottom: 2px solid #6b9b5e;
+  padding: 20px;
+}
+
+.exp-pix {
+  text-align: center;
+  flex-basis: 60%;
+}
+
+.pix {
+  background-position: center;
+  background-size: cover;
+  width: calc(50% - 12px);
+  padding-bottom: 27%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.par {
+  flex-basis: 40%;
+}
+
+.par:last-child {
+  flex-basis: 60%;
+}
+
+.session-soft {
+  display: block;
+}
+
+.soft {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.soft-pic {
+  width: 70px;
+  background-position: 50% 0;
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 70px;
+  margin: 10px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 680px) {
+  .par {
+    flex-basis: 100%;
+  }
+
+  .par:last-child {
+    flex-basis: 100%;
+  }
+
+  .exp-pix {
+    flex-basis: 50%;
+  }
+
+  .pix {
+    width: 100%;
+    padding-bottom: 54%;
+  }
+
+  header {
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  section {
+    max-width: 500px;
+    margin: auto;
+    align-items: center;
+  }
+
+  .social-links {
+    padding: 10px 0 0;
+  }
+
+  .edu {
+    flex-wrap: wrap;
+  }
+
+  .soft {
+    max-width: 370px;
+    margin: auto;
   }
 }
